@@ -8,8 +8,10 @@ Prerequires:
     ```
     $ tesseract --version
     ```
- 2. Run
+ 2. Run to install all the dependencies and start Karafka consumption server with web server
     ```
+    bundle install 
+    
     docker-compose up -d && bundle exec rackup -D && bundle exec karafka server
     ```
  3. Send POST request to http://localhost:9292/ocr with the following body: 

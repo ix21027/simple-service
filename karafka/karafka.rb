@@ -13,7 +13,7 @@ APP_LOADER.eager_load
 
 class KarafkaApp < Karafka::App
   setup do |config|
-    config.kafka = { 'bootstrap.servers': '127.0.0.1:9092' }
+    config.kafka = { 'bootstrap.servers': ENV['KAFKA_HOST'] || 'kafka:9092' }
     config.client_id = 'ocr_service_app'
   end
   

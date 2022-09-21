@@ -2,8 +2,4 @@ source 'https://rubygems.org'
 
 gem "rtesseract", "~> 3.1"
 gem "down", "~> 5.3"
-<<<<<<< HEAD:karafka/Gemfile
 gem "karafka", "~> 2.0"
-
-=======
->>>>>>> d5905b2541a8d554f8dfd5aff6154bdd59be776f:Gemfile

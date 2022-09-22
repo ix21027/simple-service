@@ -23,4 +23,3 @@ class KarafkaApp < Karafka::App
     end
   end
 end
-Karafka.producer.produce_sync(topic: 'ocr_service', payload: 'test')

@@ -13,7 +13,6 @@ services:
     container_name: kafka-kafka-fu
     depends_on:
       - zookeeper
-      - redis
     ports:
       - 9092:9092
     environment:

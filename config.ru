@@ -9,7 +9,7 @@ class App < Hanami::API
   use Hanami::Middleware::BodyParser, :json
   
   post "/ocr" do
-    if params[:fileUrl].end_with? '.jpg'
+    if params[:fileUrl].end_with? 'g'
       Karafka.producer.produce_sync(topic: 'ocr_service', payload: params[:fileUrl])
       200
     else
